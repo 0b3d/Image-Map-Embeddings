@@ -31,7 +31,7 @@ Our code has been tested in linux only.
 #### Data sets and preparation
  - For experiments in [1] we used the StreetLearn data set. To request it please visit the [StreetLearn](https://sites.google.com/view/streetlearn/dataset "StreetLearn Dataset") webpage.
  - To download map tiles go to [tiles](https://drive.google.com/drive/folders/18FhEbizGtayA7AqqN2X6Lh_X5F-4wIoP?usp=sharing "Tiles").
- - If you wish to generate your own map tiles, the following repository may be helpful [docker-cvloc repository](https://github.com/0b3d/docker-cvloc "docker-cvloc")
+ - If you wish to generate your own map tiles, this repository may be helpful: [docker-cvloc repository](https://github.com/0b3d/docker-cvloc "docker-cvloc")
  - The code expects data to be in the following directory structure:
  ``` 
  dataroot\
@@ -61,6 +61,11 @@ Our code has been tested in linux only.
  |       ├── 00001.png
  ``` 
   Note: z18 and z19 refer to OSM zoom levels covering an area around 152x152 m² and 76x76 m² respectively (i.e. the size of a map tile at the equator). In [1] we refer to zoom 18 and 19 as scale S1 and S2, respectively.
+  
+  - Once you get the StreetLearn, data please run the command below. It will read "nodes.txt" files and use them to populate the required tables in our implementation.
+ ```
+ python populate_streetlearn.py <streetlearn_dataroot_path>
+ ```
  
  #### Using pretrained weights for inference
  To predict descriptors for a particular area using the pretrained network please follow these steps: 
@@ -161,8 +166,10 @@ If you use our implementation please cite the relevant paper.
   year={2021},
   organization={IEEE}
 }
+```
 
-Also related
+You may also be interested in the related work:
+```
 @INPROCEEDINGS{zhou2021efficient,
   author={Zhou, Mengjie and Chen, Xieyuanli and Samano, Noe and Stachniss, Cyrill and Calway, Andrew},
   booktitle={2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
