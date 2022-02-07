@@ -1,0 +1,23 @@
+name: s2v
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - opencv=3.4.2=py37h6fd60c2_1
+  - pandas=1.2.4=py37h2531618_0
+  - pillow=6.0.0=py37h34e0f95_0
+  - pip=21.3.1=pyhd8ed1ab_0
+  - python=3.7.8=h8bdb77d_2_cpython
+  - pytorch=1.7.1=py3.7_cuda10.1.243_cudnn7.6.3_0
+  - scikit-image=0.16.2=py37h0573a6f_0
+  - scikit-learn=0.21.1=py37hd81dba3_0
+  - scipy=1.2.1=py37h7c811a0_0
+  - tensorboard=2.0.0=pyhb230dea_0
+  - tensorflow=2.0.0=mkl_py37h66b46cc_0
+  - tensorflow-base=2.0.0=mkl_py37h9204916_0
+  - tensorflow-estimator=2.0.0=pyh2649769_0
+  - torchvision=0.8.2=py37_cu101
+  - pip:
+    - opencv-contrib-python==4.5.4.60
+
