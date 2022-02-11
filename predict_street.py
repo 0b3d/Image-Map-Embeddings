@@ -1,4 +1,4 @@
-"""Predict features in streeatlearn dataset
+"""Predict features in streeatlearn dataset and openstreetmap (pano-map pair).
 
 It will load a saved model from --checkpoints_dir and save the results to --results_dir.
 
