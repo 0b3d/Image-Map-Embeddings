@@ -78,6 +78,7 @@ Our code has been tested in linux only.
  ./scripts/predict_street.sh
  ```
  6. Predictions will be saved in the results directory
+ Note: If you only want to use the sub-network to extract map or panorama features, please refer to the "predict_map.py" and "predict_pano.py".
  
  #### Training street model
  
