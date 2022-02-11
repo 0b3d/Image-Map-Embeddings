@@ -77,7 +77,7 @@ Our code has been tested in linux only.
  ```
  ./scripts/predict_street.sh
  ```
- If you only want to extract only map or panorama features with the sub-network, please refer to the "predict_map.py" and "predict_pano.py".
+ If you want to extract only map or panorama features with the sub-network, please refer to the "predict_map.py" and "predict_pano.py".
 
  6. Predictions will be saved in the results directory
 
@@ -172,6 +172,16 @@ If you use our implementation please cite the relevant paper.
 ```
 
 You may also be interested in the related work:
+- [3] [Efficient Localisation using Images and Openstreetmaps](https://ieeexplore.ieee.org/abstract/document/9635972 "Efficient Localisation using Images and Openstreetmaps").
+This repository contains code to extract features from OxfordRobotCar dataset used in [3]:
+1. Download all the images (center, left, right, rear), vo, gps, ground truth information via the [OxfordRobotCar](https://robotcar-dataset.robots.ox.ac.uk/datasets/ "OxfordRobotCar Dataset") webpage.
+2. Extract tar files, e.g. tar -xvf 2015-02-06-13-57-16_mono_left_01.tar in the dataroot/robotcar.
+3. Use "preprocess_robotcar.py" script to extract frames every certain time step which is defined in the script and save them to a csv file. 
+4. Extract features from robotcar frames using the "predict_robotcar.py". 
+
+Note: All features can be extracted with this repository. The MCL implementation will be public in the near future. 
+
+If you use our implementation please cite the relevant paper. 
 ```
 @INPROCEEDINGS{zhou2021efficient,
   author={Zhou, Mengjie and Chen, Xieyuanli and Samano, Noe and Stachniss, Cyrill and Calway, Andrew},
@@ -182,6 +192,7 @@ You may also be interested in the related work:
   doi={10.1109/IROS51168.2021.9635972}}
 
 ```
+
 
 
 
