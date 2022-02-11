@@ -171,8 +171,8 @@ If you use our implementation please cite the relevant paper.
 }
 ```
 
-You may also be interested in the related work:
-- [3] [Efficient Localisation using Images and Openstreetmaps](https://ieeexplore.ieee.org/abstract/document/9635972 "Efficient Localisation using Images and Openstreetmaps").
+You may also be interested in the related work: [3] [Efficient Localisation using Images and Openstreetmaps](https://ieeexplore.ieee.org/abstract/document/9635972 "Efficient Localisation using Images and Openstreetmaps").
+
 This repository contains code to extract features from OxfordRobotCar dataset used in [3]:
 1. Download all the images (center, left, right, rear), vo, gps, ground truth information via the [OxfordRobotCar](https://robotcar-dataset.robots.ox.ac.uk/datasets/ "OxfordRobotCar Dataset") webpage.
 2. Extract tar files, e.g. tar -xvf 2015-02-06-13-57-16_mono_left_01.tar in the dataroot/robotcar.
